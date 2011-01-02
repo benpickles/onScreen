@@ -1,3 +1,9 @@
+// onScreen jQuery plugin
+// (c) 2011 Ben Pickles
+//
+// http://benpickles.github.com/onScreen
+//
+// Released under MIT license.
 ;(function($) {
   $.expr[":"].onScreen = function(elem) {
     var $window = $(window)
