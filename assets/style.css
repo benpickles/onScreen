@@ -1,0 +1,66 @@
+body {
+  background: #fff;
+  font-family: Baskerville, Georgia, "Times New Roman", serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+
+#fork-me {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#fork-me a {
+  background: url("fork_me.png") no-repeat 0 0;
+  display: block;
+  height: 149px;
+  text-indent: -9999px;
+  width: 149px;
+}
+
+article {
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  width: 40em;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0.8em 0 0.3em;
+}
+
+p {
+  margin: 0.2em 0 0.3em;
+}
+
+a {
+  background: #eef;
+  color: #357;
+  padding: 1px 2px;
+}
+a:hover {
+  color: #135;
+  text-decoration: none;
+}
+
+code {
+  background: #f4f4ff;
+  border: 1px solid #ddf;
+  padding: 1px 2px;
+}
+
+pre {
+  background: #f4f4ff;
+  border: 1px solid #ddf;
+  line-height: 1.4em;
+  margin: 0.8em -1em;
+  padding: 0.5em 1em;
+}
+
+pre code {
+  background: transparent;
+  border: none;
+}

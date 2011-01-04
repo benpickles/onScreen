@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>onScreen &bull; detect elements currently visible on-screen with jQuery</title>
+<link href="assets/style.css" rel="stylesheet">
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-117680-14']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+<body>
+  <div id="fork-me"><a href="http://github.com/benpickles/onScreen">Fork me on GitHub</a></div>
+
+  <article>
+    <h1>onScreen</h1>
+
+    <p>onScreen is a jQuery plugin to detect whether an element is currently
+      visible on-screen. It adds the <code>:onScreen</code> selector which you
+      can use like so: <code>$("span:onScreen")</code>.</p>
+
+    <p>
+      Download <a href="jquery.onscreen.js">jquery.onscreen.js</a> (0.4Kb)
+      or minified <a href="jquery.onscreen.min.js">jquery.onscreen.min.js</a> (0.26Kb).
+    </p>
+
+    <pre><code>$(function() {                          // On document load
+  $(window).scroll(function() {         // when the page is scrolled
+    $("h2")                             // get all &lt;h2&gt;s
+      .css("background-color", "")      // reset their background colours
+      .filter(":onScreen")              // get only &lt;h2&gt;s on screen
+        .css("background-color", "red") // give them a red background
+  })
+})</code></pre>
+  </article>
+
+  <footer>
+    <p>
+      &copy; 2011 <a href="http://benpickles.com/">Ben Pickles</a>,
+      see <a href="http://github.com/benpickles/onScreen/blob/master/LICENSE">LICENSE</a> for details.
+    </p>
+  </footer>
+</body>
+</html>
