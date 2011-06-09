@@ -7,9 +7,15 @@
 ;(function($) {
   $.expr[":"].onScreen = function(elem) {
     var $window = $(window)
-    var scroll_top = $window.scrollTop()
-    var scroll_bottom = scroll_top + $window.height()
-    var top = $(elem).offset().top
-    return top > scroll_top && top < scroll_bottom
+    var viewport_top = $window.scrollTop()
+    var viewport_height = $window.height()
+    var viewport_bottom = viewport_top + viewport_height
+    var $elem = $(elem)
+    var top = $elem.offset().top
+    var height = $elem.height()
+    var bottom = top + height
+
+    return (top >= viewport_top && top < viewport_bottom) ||
+           (bottom > viewport_top && bottom <= viewport_bottom)
   }
 })(jQuery);
