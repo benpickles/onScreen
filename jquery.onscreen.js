@@ -1,4 +1,4 @@
-// onScreen jQuery plugin
+// onScreen jQuery plugin v0.2.0
 // (c) 2011 Ben Pickles
 //
 // http://benpickles.github.com/onScreen
