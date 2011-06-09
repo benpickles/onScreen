@@ -25,18 +25,24 @@
       visible on-screen. It adds the <code>:onScreen</code> selector which you
       can use like so: <code>$("span:onScreen")</code>.</p>
 
-    <p>
-      Download <a href="jquery.onscreen.js">jquery.onscreen.js</a> (0.4Kb)
-      or minified <a href="jquery.onscreen.min.js">jquery.onscreen.min.js</a> (0.26Kb).
-    </p>
+    <h2>Download</h2>
 
-    <pre><code>$(function() {                          // On document load
-  $(window).scroll(function() {         // when the page is scrolled
+    <dl>
+      <dt>Uncompressed (0.7Kb)</dt>
+      <dd><a href="jquery.onscreen.js">jquery.onscreen.js</a></dd>
+      <dt>Minified and gzipped (0.3Kb)</dt>
+      <dd><a href="jquery.onscreen.min.js">jquery.onscreen.min.js</a></dd>
+    </dl>
+
+    <h2>Example</h2>
+
+    <pre><code>$(function() {
+  setInterval(function() {
     $("h2")                             // get all &lt;h2&gt;s
       .css("background-color", "")      // reset their background colours
       .filter(":onScreen")              // get only &lt;h2&gt;s on screen
         .css("background-color", "red") // give them a red background
-  })
+  }, 1000)                              // repeat every second
 })</code></pre>
   </article>
 
