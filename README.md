@@ -13,4 +13,4 @@ onScreen is a jQuery plugin to detect whether an element is currently visible on
 
 ## Copyright
 
-Copyright 2011 [Ben Pickles](http://benpickles.com/). See [LICENCE](LICENCE) for details.
+Copyright 2011-2013 [Ben Pickles](http://benpickles.com/). See [LICENCE](LICENCE) for details.
