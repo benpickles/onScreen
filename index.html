@@ -22,8 +22,11 @@
     <h1>onScreen</h1>
 
     <p>onScreen is a jQuery plugin to detect whether an element is currently
-      visible on-screen. It adds the <code>:onScreen</code> selector which you
-      can use like so: <code>$("span:onScreen")</code>.</p>
+      visible on-screen. It adds the <code>:onScreen</code> selector which is
+      used to select only those elements that are currently within the bounds
+      of the screen: <code>$("span:onScreen")</code>. It can also be combined
+      with other selectors so, for example, to return only <em>visible</em>,
+      on-screen elements use <code>$("span:visible:onScreen")</code>.</p>
 
     <h2>Download</h2>
 

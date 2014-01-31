@@ -1,6 +1,6 @@
 # onScreen
 
-onScreen is a jQuery plugin to detect whether an element is currently visible on-screen. It adds the `:onScreen` selector which you can use like so: `$("span:onScreen")`.
+onScreen is a jQuery plugin to detect whether an element is currently visible on-screen. It adds the `:onScreen` selector which is used to select only those elements that are currently within the bounds of the screen: `$("span:onScreen")`. It can also be combined with other selectors so, for example, to return only *visible*, on-screen elements use `$("span:visible:onScreen")`.
 
 ```js
 $(function() {
